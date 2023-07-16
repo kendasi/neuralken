@@ -51,6 +51,6 @@ inputs = [0,1]
 ```
 Next, we'll run the `runNetwork` function, and store it in the variable `modelOutput`:
 ```
-modelOutput = runNetwork(inputs, optimalWeights, nodes, types)[1]
+modelOutput = neuralnetwork.runNetwork(inputs, optimalWeights, nodes, types)[1]
 ```
 The `optimalWeights` array was worked out during training in the previous section. `nodes` and `types` are hyperparameters, which were defined in the last section. At the end, [1] is needed to get the actual outputs of the model (index [0] is the outputs of the hidden layers only). You can then do whatever you need with the contents of modelOutput, such as return it to the user.
