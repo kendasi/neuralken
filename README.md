@@ -2,6 +2,7 @@
 A package to create feedforward neural networks in a short amount of code, mostly for beginners. Neuralken is under the MIT license.
 
 ## Documentation
+Before starting, please note that there is a bug that hasn't been fixed yet that causes models with a single output to increase the error rather than decreasing during training. It still works fine for models with multiple outputs.
 ### Installing and importing neuralken
 In this example, you'll be shown how to create a simple [XOR](https://en.wikipedia.org/wiki/XOR_gate) neural network. If both the inputs are the same, the model will output [0,1], but if they are different, they will output [1,0].
 Before starting, pip install the latest version of the neuralken library. In your computer's terminal or shell, run:
