@@ -3,7 +3,7 @@ A package to create feedforward neural networks in a short amount of code, mostl
 
 ## Documentation
 ### Installing and importing neuralken
-In this example, you'll be shown how to create a simple [XOR](https://en.wikipedia.org/wiki/XOR_gate) neural network.
+In this example, you'll be shown how to create a simple [XOR](https://en.wikipedia.org/wiki/XOR_gate) neural network. If both the inputs are the same, the model will output [0,1], but if they are different, they will output [1,0].
 Before starting, pip install the latest version of the neuralken library. In your computer's terminal or shell, run:
 ```
 pip install neuralken
@@ -16,8 +16,8 @@ from neuralken import neuralnetwork
 To train a neural network, first you'll need to define a few variables:
 ```
 trainingDataInputs = [[0,1], [1,0], [1,1], [0,0]]
-trainingDataOutputs = [[1], [1], [0], [0]]
-nodes = [10,10,10,10,10,10,1]
+trainingDataOutputs = [[1,0], [1,0], [0,1], [0,1]]
+nodes = [10,10,10,10,10,10,2]
 types = ["relu", "relu", "relu", "relu", "relu", "relu", "logistic"]
 ```
 Let's break this down. On the first line, `trainingDataInputs` is defined, which is an array containing a few sub-arrays. Each sub-array is the inputs for one training example. 
